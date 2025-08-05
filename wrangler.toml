@@ -3,11 +3,11 @@ main = "src/index.ts"
 compatibility_date = "2024-12-30"
 compatibility_flags = [ "nodejs_compat" ]
 
-# [[d1_databases]]
-# binding = "DB"
-# database_name = "blazenote"
-# database_id = "<DATABASE ID>"
-# migrations_dir = "./migrations"
+[[d1_databases]]
+binding = "DB"
+database_name = "blazenote"
+database_id = "9c5874a9-1bee-4621-a0a4-0bc453fe592f"
+migrations_dir = "./migrations"
 
 # [ai]
 # binding = "AI"
@@ -19,3 +19,8 @@ compatibility_flags = [ "nodejs_compat" ]
 
 [observability.logs]
 enabled = true
+
+# Custom domain configuration
+[[routes]]
+pattern = "blazenote-backend.pristine-quoter.sxplab.com"
+custom_domain = true
