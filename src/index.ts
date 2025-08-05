@@ -13,6 +13,7 @@ const app = new Hono();
 const allowedOrigins = new Set([
   "http://localhost:5173",
   "https://blazenote-frontend.pristine-quoter.sxplab.com",
+  "https://blazenote-frontend-1yq.pages.dev"
 ]);
 
 // https://hono.dev/docs/middleware/builtin/cors
